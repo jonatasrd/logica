@@ -6,7 +6,8 @@ Exercícios de lógica de programção
 - Fatorial Recursivo
 - Fibonacci
 - Fibonacci Recursivo
-- MDC Recursivo
+- MDC Recursivo (Algoritmo de Euclides)
 - MMC
 - Numero primo
 - Ordenar vetor
+- Exponencial

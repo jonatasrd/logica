@@ -1,8 +1,9 @@
 package algorithm;
 
-public class OrdenarVetor {
+public class OrdenarVetorBubbleSort {
 
 	public static void main(String[] args) {
+
 		int quantidade = 10000;
 		int[] vetor = new int[quantidade];
 
@@ -12,7 +13,7 @@ public class OrdenarVetor {
 
 		long tempoInicial = System.currentTimeMillis();
 
-		ordernaVetor(vetor);
+		ordernaVetorBubbleSort(vetor);
 
 		long tempoFinal = System.currentTimeMillis();
 
@@ -20,20 +21,20 @@ public class OrdenarVetor {
 
 	}
 
-	public static int[] ordernaVetor(int vetor[]) {
-
-		for (int i = 0; i < vetor.length; i++) {
-			for (int j = i + 1; j < vetor.length; j++) {
-				int temp;
-				if (vetor[i] > vetor[j]) {
-					temp = vetor[j];
-					vetor[j] = vetor[i];
-					vetor[i] = temp;
+	private static void ordernaVetorBubbleSort(int[] vetor) {
+		boolean troca = true;
+		int aux;
+		while (troca) {
+			troca = false;
+			for (int i = 0; i < vetor.length - 1; i++) {
+				if (vetor[i] > vetor[i + 1]) {
+					aux = vetor[i];
+					vetor[i] = vetor[i + 1];
+					vetor[i + 1] = aux;
+					troca = true;
 				}
 			}
 		}
-
-		return vetor;
 	}
 
 }

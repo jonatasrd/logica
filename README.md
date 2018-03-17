@@ -9,5 +9,7 @@ Exercícios de lógica de programção
 - MDC Recursivo (Algoritmo de Euclides)
 - MMC
 - Numero primo
-- Ordenar vetor
 - Exponencial
+- Ordenar vetor
+- Ordenar vetor usando bubble sort
+- Ordenar vetor usando quick sort
